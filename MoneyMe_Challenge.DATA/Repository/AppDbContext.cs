@@ -1,12 +1,12 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using MoneyMe_Challenge.CORE.Model;
+using MoneyMe_Challenge.CORE.Entity;
 
 namespace MoneyMe_Challenge.DATA.Repository
 {
     public class AppDbContext : DbContext
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
-        public virtual DbSet<Quote> Quotes { get; set; }
+        public virtual DbSet<QuoteEntity> Quote { get; set; }
 
     }
 }
