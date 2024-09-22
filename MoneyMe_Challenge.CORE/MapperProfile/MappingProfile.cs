@@ -8,7 +8,8 @@ namespace MoneyMe_Challenge.CORE.MapperProfile
     {
         public MappingProfile()
         {
-            CreateMap<Quote, QuoteEntity>();
+            CreateMap<Quote, QuoteEntity>()
+            .ReverseMap();
         }
     }
 }

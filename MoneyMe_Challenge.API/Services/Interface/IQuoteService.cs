@@ -4,6 +4,7 @@ namespace MoneyMe_Challenge.API.Services.Interface
 {
     public interface IQuoteService
     {
-        Task Add(Quote quote);
+        Task<Guid> UpsertAsync(Quote quote);
+        Task<Quote> GetQuoteAsync(Guid quoteId);
     }
 }

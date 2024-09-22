@@ -11,12 +11,25 @@ namespace MoneyMe_Challenge.API.Controllers
         {
             _quoteService = quoteService;
         }
+
         [HttpPost()]
         [Route("RequestQuote")]
         public async Task<IActionResult> Index([FromBody] Quote quote)
         {
-            await _quoteService.Add(quote);
-            return Ok();
+            var returnURL = await _quoteService.UpsertAsync(quote);
+            return Ok(returnURL);
+        }
+
+        [HttpGet()]
+        [Route("quote/{quoteId}")]
+        public async Task<IActionResult> GetQuote([FromRoute] Guid quoteId)
+        {
+            var quote = await _quoteService.GetQuoteAsync(quoteId);
+            if (quote == null)
+            {
+                return NotFound();
+            }
+            return Ok(quote);
         }
     }
 }
