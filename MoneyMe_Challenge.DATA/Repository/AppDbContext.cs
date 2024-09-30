@@ -7,6 +7,7 @@ namespace MoneyMe_Challenge.DATA.Repository
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
         public virtual DbSet<QuoteEntity> Quote { get; set; }
+        public virtual DbSet<BlacklistEntity> Blacklist { get; set; }
 
     }
 }
