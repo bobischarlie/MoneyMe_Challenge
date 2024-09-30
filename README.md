@@ -37,3 +37,8 @@ It should show that the publish completed successfully
 ![image](https://github.com/user-attachments/assets/2d522cd6-4631-4ab7-b028-4fe449daf707)
 you may also check that the tables have been created under moneyme_challenge database
 ![image](https://github.com/user-attachments/assets/da2ad5f2-815c-4477-b3cb-135d80402f41)
+
+
+Thing/s to check:
+Check the appsettings.json file in \MoneyMe_Challenge\MoneyMe_Challenge.API folder, the moneyMeUIURL value should be the same URL if you run (npm run dev) of the UI application, if not, update the appsettings.json to match it
+![image](https://github.com/user-attachments/assets/06cdfbff-227b-499f-b156-b3fe1e62f468)
