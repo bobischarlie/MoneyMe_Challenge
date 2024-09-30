@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/758d7bd5-ffc0-4071-8fc1-93ffcd63dd7a)# MoneyMe_Challenge
+# MoneyMe_Challenge
 Pre-requisites: Install applications below if not yet installed on your machine
 Visual Studio, 
 https://visualstudio.microsoft.com/downloads/
@@ -18,11 +18,22 @@ Database:
    - Click on Security > Logins(Right click) > New Login
        ![image](https://github.com/user-attachments/assets/e9989c06-0990-475f-aaf3-53ed0252e655)
 
-      Login Type: SQL Server Authentication
-      Login Name: localUser
-      Password: password
+      Login Type: SQL Server Authentication;
+      Login Name: localUser;
+      Password: password;
    - On the server roles, check the checkbox for public and sysadmin
      ![image](https://github.com/user-attachments/assets/9d6ef35d-df51-4dcb-b30f-3e9318b26aaa)
     
 - Open the downloaded Solution then right click on the MoneyMe_Db Project then click Publish
 ![image](https://github.com/user-attachments/assets/481c009f-da7a-4c84-afd3-bcb1edd6a81c)
+
+- Click the Edit button then Go to Browse Tab and fill up the login credential for the local user that you just created, please refer to screenshot below
+  ![image](https://github.com/user-attachments/assets/0d305159-4400-4ef9-9367-019b3d4965b7)
+
+-Then click Publish button
+![image](https://github.com/user-attachments/assets/0991aec9-ebc7-432e-9d14-0624dd54c10f)
+
+It should show that the publish completed successfully
+![image](https://github.com/user-attachments/assets/2d522cd6-4631-4ab7-b028-4fe449daf707)
+you may also check that the tables have been created under moneyme_challenge database
+![image](https://github.com/user-attachments/assets/da2ad5f2-815c-4477-b3cb-135d80402f41)
